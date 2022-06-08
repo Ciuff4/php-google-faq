@@ -65,10 +65,12 @@ $db=[
     <header>h</header>
     <main>
         <div class="container">
+            <?php foreach ($db as $faq) : ?>
             <div class="faq_section">
-                <h3> TITOLO </h3>
-                <p>PARAGRAFO</p>
+                <h2 class="title_faq"> <?php  echo $faq['title_question']?></h2>
+                <p><?php echo $faq['pharagrph']?></p>
             </div>
+            <?php endforeach ?>
         </div>
     </main>
 </body>
